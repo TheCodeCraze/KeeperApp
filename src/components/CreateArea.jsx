@@ -31,6 +31,7 @@ function CreateArea({ addNote }) {
           onClick={(e) => {
             e.preventDefault();
             addNote(note);
+            setNote({ title: "", content: "" });
           }}
         >
           Add
